@@ -1,18 +1,111 @@
-//ЗАДАНИЕ 7.6.1
-const word = prompt('Введите слово');
-let wordReversed = '';
+//ЗАДАНИЕ 6.10.1
+const number = +prompt();
+const sqr = number * number;
+const cube = number * sqr;
 
-if (word === '') {
-    console.log('Вы не ввели слово');
-} else {
-    for (let i = 1; i <= word.length; i +=1) {
-        wordReversed = wordReversed + word[word.length-i];
-    }
-    if (word === wordReversed) {
-        console.log(`Слово ${word} является палиндромом`);
-    } else
-        console.log(`Слово ${word} не является палиндромом`);
-}
+alert(`Введённое число - ${number} \nКвадрат числа - ${sqr} \nКуб числа - ${cube}`)
+
+
+//ЗАДАНИЕ 6.10.2
+//const sale = prompt();
+//
+//if (sale.toLowerCase() === 'скидка') {
+//    alert('Промокод применён');
+//} else {
+//    alert('Промокод не работает')
+//}
+
+
+//ЗАДАНИЕ 6.10.3
+//const userName = prompt('Введите имя');
+//const userYear = +prompt('Введите год рождения');
+//
+//if (isNaN(userYear)) {
+//    alert('Год должен быть числом!')
+//} else {
+//    alert(`${userName}: ${new Date().getFullYear() - userYear}`);
+//    }
+
+
+//ЗАДАНИЕ 6.10.4
+//const userName = prompt('Введите имя');
+//const userYear = +prompt('Введите год рождения');
+//const userAge = new Date().getFullYear()-userYear;
+//
+//if (isNaN(userYear)) {
+//    console.log('Год должен быть числом!')
+//} else {
+//    const reminder = userAge % 10;
+//    switch (reminder) {
+//        case 1:
+//            alert(`${userName}: ${userAge} год`);
+//            break;
+//        case 2:
+//        case 3:
+//        case 4:
+//            alert(`${userName}: ${userAge} года`);
+//            break;
+//        default:
+//            alert(`${userName}: ${userAge} лет`);
+//        }
+//    }
+
+//ЗАДАНИЕ 6.10.5
+//const age = +prompt('Введите Ваш возраст');
+//let credit;
+//let userCredit;
+//
+//if (age < 18) {
+//    alert('Мы не выдаем кредит лицам младше 18 лет');
+//}  
+//
+//else if (18 <= age <= 21) {
+//        credit = 50000;
+//        userCredit = +prompt(`Мы можем вам выдать максимум ${credit}. \nВведите сумму кратную 1000.`);
+//        if (userCredit > credit) {
+//            alert(`Ваш кредит не может превышать ${credit}`);
+//        } else if (userCredit % 1000 !== 0) {
+//            alert(`Вы ввели значение не кратное 1000. Мы можем выдать ${Math.ceil(userCredit/1000)*1000}`);
+//            }
+//    }
+//
+//else if (22 <= age <= 35) {
+//        credit = 400000;
+//        userCredit = +prompt(`Мы можем вам выдать максимум ${credit}. \nВведите сумму кратную 1000.`);
+//        if (userCredit > credit) {
+//            alert(`Ваш кредит не может превышать ${credit}`);
+//        } else if (userCredit % 1000 !== 0) {
+//            alert(`Вы ввели значение не кратное 1000. Мы можем выдать ${Math.ceil(userCredit/1000)*1000}`);
+//            }
+//    }
+//
+//else if (36 <= age <= 65) {
+//        credit = 1000000;
+//        userCredit = +prompt(`Мы можем вам выдать максимум ${credit}. \nВведите сумму кратную 1000.`);
+//        if (userCredit > credit) {
+//            alert(`Ваш кредит не может превышать ${credit}`);
+//        } else if (userCredit % 1000 !== 0) {
+//            alert(`Вы ввели значение не кратное 1000. Мы можем выдать ${Math.ceil(userCredit/1000)*1000}`);
+//            }
+//    }
+
+
+
+//ЗАДАНИЕ 7.6.1
+//const word = prompt('Введите слово');
+//let wordReversed = '';
+//
+//if (word === '') {
+//    console.log('Вы не ввели слово');
+//} else {
+//    for (let i = 1; i <= word.length; i +=1) {
+//        wordReversed = wordReversed + word[word.length-i];
+//    }
+//    if (word === wordReversed) {
+//        console.log(`Слово ${word} является палиндромом`);
+//    } else
+//        console.log(`Слово ${word} не является палиндромом`);
+//}
 
 
 //ЗАДАНИЕ 7.6.2
